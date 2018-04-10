@@ -1,0 +1,110 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="kadai1.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700 rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<h1 id="main_title" data-text="Hello, I'm Yuto Nabetani!!">Hello, I'm Yuto Nabetani!!</h1>
+<div class="sub_detail">
+  <div class="item-box">
+    <input type="checkbox" id="item">
+    <label for="item" id="sign"><i class="material-icons icons">power_settings_new</i></label>
+  </div>
+</div>
+<h2 class="sub_title">Basic Information</h2>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Name
+    </div>
+  </div>
+  <div class="value">
+  鍋谷優斗
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Nickname
+    </div>
+  </div>
+  <div class="value">
+なべちゃん
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Affiliation
+    </div>
+  </div>
+  <div class="value">
+    情報学研究科吉川・馬研究室M1
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Hometown
+    </div>
+  </div>
+  <div class="value">
+    大阪
+  </div>
+</div>
+<div>
+<h2 class="sub_title">About Me</h2>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Hobby
+    </div>
+  </div>
+  <div class="value">
+    野球，ゲーム，音楽鑑賞
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Good point
+    </div>
+  </div>
+  <div class="value">
+    正直なところ
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Bad point
+    </div>
+  </div>
+  <div class="value">
+    なんでも話してしまうところ
+  </div>
+</div>
+<div class="sub_detail">
+  <div class="label">
+    <div>
+      Favorite Artist
+    </div>
+  </div>
+  <div class="value">
+    UVERworld, L'Arc〜en〜Ciel
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="novacancy.js"></script>
+<script src="jquery.collapse.js"></script>
+<script>
+$(".item-box").on('click', function(){
+  $('.value').novacancy();
+     $('.item-box').delay(500).queue(function(){
+       $("#sign").toggle(
+         function(){
+           $("#sign").remove();
+         }
+       );
+   });
+ });
+</script>
